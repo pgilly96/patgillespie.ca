@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pat Gillespie Band — Booking</title>
+<meta name="description" content="Pat Gillespie Band — press kit, booking enquiries, live video and tour dates for festivals, venues and media.">
+<link rel="stylesheet" href="style.css">
+<style>
+  .links-main { max-width: 520px; padding-top: 40px; }
+  .band-photo {
+    display: block; width: 100%; aspect-ratio: 16 / 9;
+    object-fit: cover; object-position: center 62%;
+    border-radius: 4px; margin: 0 auto 22px;
+  }
+  .links-main h1 { font-size: clamp(22px, 6vw, 32px); letter-spacing: 0.16em; }
+  .where {
+    font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--muted); margin-top: 6px; line-height: 1.9;
+  }
+
+  .link-list { list-style: none; margin: 26px 0 0; padding: 0; }
+  .link-list li { margin: 0 0 10px; }
+  .link-list a {
+    display: block;
+    padding: 15px 18px;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    background: #fff;
+    color: var(--ink);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    transition: border-color .15s ease, color .15s ease, background .15s ease, transform .15s ease;
+  }
+  .link-list a:hover, .link-list a:focus-visible {
+    border-color: var(--accent);
+    color: var(--accent);
+    text-decoration: none;
+    transform: translateY(-1px);
+  }
+  .link-list a .note {
+    display: block;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: none;
+    color: var(--muted);
+    margin-top: 3px;
+  }
+
+  /* The two things a promoter came for */
+  .link-list a.primary {
+    background: var(--ink); border-color: var(--ink); color: var(--bg);
+    padding: 19px 18px; font-size: 14px;
+  }
+  .link-list a.primary .note { color: #cfc9bd; font-size: 11.5px; }
+  .link-list a.primary:hover, .link-list a.primary:focus-visible {
+    background: var(--accent); border-color: var(--accent); color: #fff;
+  }
+  .link-list a.primary:hover .note, .link-list a.primary:focus-visible .note { color: #fff; }
+  .link-list a.second { border: 2px solid var(--ink); padding: 18px; font-size: 14px; }
+  .link-list a.second .note { font-size: 11.5px; }
+
+  .link-list li.divider {
+    font-size: 11px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 26px 0 10px;
+  }
+  .socials { margin: 22px 0 0; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; }
+  .socials a { display: inline-block; padding: 6px 8px; color: var(--ink); font-weight: 600; }
+  .socials a:hover, .socials a:focus-visible { color: var(--accent); text-decoration: none; }
+</style>
+</head>
+<body>
+<header>
+  <div class="site-name">Pat Gillespie</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="music.html">Music</a>
+    <a href="tour.html">Tour</a>
+    <a href="contact.html">Contact</a>
+    <a href="signup.html">Sign Up</a>
+  </nav>
+</header>
+
+<main class="links-main">
+  <img src="images/band-bingo-hall.jpg" alt="The four members of the Pat Gillespie Band seated under a bingo board" class="band-photo">
+  <h1>Pat Gillespie Band</h1>
+  <p class="lede">East Coast Americana.</p>
+  <p class="where">Moncton · New Brunswick<br>Full band · Duo · Solo</p>
+
+  <ul class="link-list">
+    <li><a class="primary" href="epk.html">
+      Press Kit
+      <span class="note">2026 highlights, lineup and formats · one page, saves as a PDF</span>
+    </a></li>
+
+    <li><a class="second" href="mailto:bookings@patgillespie.ca?subject=Booking%20enquiry">
+      Booking Enquiries
+      <span class="note">bookings@patgillespie.ca</span>
+    </a></li>
+
+    <li><a href="epk-fr.html" lang="fr" hreflang="fr">
+      Dossier de presse
+      <span class="note">Version française</span>
+    </a></li>
+
+    <li class="divider">See and hear the band</li>
+
+    <li><a href="https://www.youtube.com/watch?v=49HNzmJKP4Q">
+      Watch — Promotional Video
+      <span class="note">Pat Gillespie Band, live</span>
+    </a></li>
+
+    <li><a href="music.html">
+      Listen
+      <span class="note">Spotify, Apple Music and YouTube Music</span>
+    </a></li>
+
+    <li><a href="tour.html">
+      Tour Dates
+      <span class="note">Upcoming shows</span>
+    </a></li>
+  </ul>
+
+  <p class="socials">
+    <a href="https://instagram.com/patjgillespie">Instagram</a>
+    <a href="https://www.facebook.com/PatJGillespie/">Facebook</a>
+    <a href="https://tiktok.com/@patjgillespie">TikTok</a>
+    <a href="https://www.youtube.com/@patjgillespie">YouTube</a>
+  </p>
+</main>
+
+<footer>
+  <p class="social">
+    <a href="https://open.spotify.com/artist/79b18KLuGdHEQD4Qkzj2lD">Spotify</a> ·
+    <a href="https://music.apple.com/ca/artist/pat-gillespie/1838736609">Apple Music</a> ·
+    <a href="https://music.youtube.com/search?q=Pat+Gillespie">YouTube Music</a> ·
+    <a href="https://instagram.com/patjgillespie">Instagram</a> ·
+    <a href="https://facebook.com/patjgillespie">Facebook</a>
+  </p>
+  <p>Bookings: <a href="mailto:bookings@patgillespie.ca">bookings@patgillespie.ca</a></p>
+  <p>© 2026 Pat Gillespie</p>
+</footer>
+</body>
+</html>
