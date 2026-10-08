@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pat Gillespie Band — Dossier de presse</title>
+<meta name="description" content="Pat Gillespie Band — East Coast Americana, de Moncton au Nouveau-Brunswick. Faits saillants 2026, formation, formules et réservations.">
+<link rel="alternate" hreflang="en" href="epk.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* Pat Gillespie Band — EPK.
+   One file, two outputs:
+   - on screen it is a responsive web page;
+   - printed (or "Save as PDF") it is a single US Letter page.
+   Palette and proportions follow style.css (patgillespie.ca):
+   cream page, ink type, indigo used only as an accent. */
+:root{
+  --bg:#f5f1ea; --ink:#1c1b18; --accent:#4650ac; --muted:#6b675e; --line:#d8d2c6;
+  --body:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  --gutter:.5in;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+@page{size:letter portrait;margin:0}
+body{font-family:var(--body);color:var(--ink);background:#e9e4da;-webkit-print-color-adjust:exact;print-color-adjust:exact;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+
+/* ---------- toolbar (screen only) ---------- */
+.bar{max-width:8.5in;margin:0 auto;padding:14px 4px;display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center;justify-content:space-between;font-size:12px;letter-spacing:.2em;text-transform:uppercase}
+.bar a,.bar button{font:inherit;font-weight:600;letter-spacing:inherit;text-transform:inherit;color:var(--ink);text-decoration:none;background:none;border:none;cursor:pointer;padding:6px 2px}
+.bar a:hover,.bar button:hover,.bar a:focus-visible,.bar button:focus-visible{color:var(--accent)}
+.bar .acts{display:flex;flex-wrap:wrap;gap:4px 18px;align-items:center}
+.bar .pdf{background:var(--ink);color:var(--bg);border-radius:3px;padding:8px 14px}
+.bar .pdf:hover,.bar .pdf:focus-visible{background:var(--accent);color:var(--bg)}
+
+/* ---------- the sheet (Letter proportions) ---------- */
+.sheet{width:8.5in;height:11in;background:var(--bg);margin:0 auto 28px;display:flex;flex-direction:column;overflow:hidden;box-shadow:0 2px 18px rgba(0,0,0,.12)}
+
+.hero{height:3.3in;position:relative;background:var(--ink);overflow:hidden}
+.hero img{width:100%;height:100%;object-fit:cover;object-position:center 49%;display:block}
+
+.plate{padding:.26in var(--gutter) .2in;display:flex;justify-content:space-between;align-items:flex-end;gap:.3in}
+.plate h1{font-size:28px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;line-height:1.05;color:var(--ink)}
+.plate .sub{font-size:13.5px;font-weight:500;color:var(--ink);margin-top:8px}
+.plate .loc{text-align:right;font-size:9px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);line-height:1.9;white-space:nowrap}
+
+.stats{display:flex;margin:0 var(--gutter);border-top:2px solid var(--ink);border-bottom:1px solid var(--line)}
+.stat{flex:1;padding:.13in 0 .12in .22in;border-right:1px solid var(--line)}
+.stat:first-child{padding-left:0}
+.stat:last-child{border-right:none}
+.stat b{display:block;font-size:25px;font-weight:800;letter-spacing:.01em;line-height:1.05;color:var(--accent)}
+.stat span{display:block;font-size:8.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;margin-top:5px;line-height:1.3;color:var(--muted)}
+
+.cols{flex:1;display:flex;padding:.24in var(--gutter) .1in;gap:.42in}
+.main{flex:1.35}
+.side{flex:1;border-left:1px solid var(--line);padding-left:.3in}
+.eyebrow{font-size:8.5px;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:var(--muted);margin-bottom:.08in}
+.side .eyebrow{margin-top:.2in}
+.side .eyebrow:first-child{margin-top:0}
+
+.gig{display:flex;gap:.12in;padding:.092in 0;border-bottom:1px solid var(--line);font-size:10.5px;line-height:1.35}
+.gig:last-of-type{border-bottom:none}
+.gig .ev{flex:1;font-weight:700;color:var(--ink)}
+.gig .ev em{display:block;font-style:normal;font-weight:400;color:var(--muted);font-size:9.5px;margin-top:1px}
+.gig .yr{font-size:8.5px;font-weight:700;letter-spacing:.12em;color:var(--muted);white-space:nowrap;padding-top:2px}
+
+.lineup{font-size:10px;line-height:1.7;color:var(--muted)}
+.lineup b{color:var(--ink);font-weight:700}
+.fmt{font-size:10px;line-height:1.6;color:var(--muted)}
+.pill{display:inline-block;border:1px solid var(--ink);color:var(--ink);font-size:8px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;padding:3px 9px;border-radius:2px;margin:0 4px 4px 0}
+
+.foot{margin:0 var(--gutter);padding:.2in 0 .26in;border-top:2px solid var(--ink);display:flex;justify-content:space-between;align-items:center;gap:.3in}
+.foot .lbl{font-size:8.5px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);margin-bottom:5px}
+.foot a{color:var(--ink);text-decoration:none}
+.foot a:hover,.foot a:focus-visible{color:var(--accent)}
+.listen{font-size:10px;line-height:1.7;color:var(--muted)}
+.listen .trk{font-size:15px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);margin-bottom:2px}
+.contact{text-align:right;font-size:10px;line-height:1.7;color:var(--muted)}
+.contact .em{font-size:12.5px;font-weight:700;color:var(--accent)}
+.qrwrap{flex-shrink:0;text-align:center}
+.qr{width:.82in;height:.82in;margin:0 auto}
+.qr img{width:100%;height:100%;object-fit:contain;display:block}
+.qrcap{font-size:6.5px;font-weight:700;letter-spacing:.14em;color:var(--muted);margin-top:4px}
+
+/* ---------- phones and narrow windows: stack and enlarge ---------- */
+@media screen and (max-width: 859px){
+  :root{--gutter:20px}
+  body{background:var(--bg)}
+  .bar{padding:12px 16px}
+  .sheet{width:100%;height:auto;margin:0;overflow:visible;box-shadow:none}
+  .hero{height:62vw;max-height:420px}
+  .plate{flex-direction:column;align-items:flex-start;gap:12px;padding:24px var(--gutter) 22px}
+  .plate h1{font-size:clamp(23px,7.2vw,36px);letter-spacing:.13em}
+  .plate .sub{font-size:17px;margin-top:8px}
+  .plate .loc{text-align:left;font-size:10.5px;white-space:normal}
+  .stat{padding:16px 6px 15px 12px}
+  .stat b{font-size:clamp(17px,5.1vw,26px)}
+  .stat span{font-size:9.5px;letter-spacing:.1em}
+  .cols{flex-direction:column;gap:30px;padding:28px var(--gutter) 30px}
+  .side{border-left:none;padding-left:0;border-top:1px solid var(--line);padding-top:26px}
+  .eyebrow{font-size:11px;margin-bottom:10px}
+  .side .eyebrow{margin-top:26px}
+  .gig{font-size:16px;padding:12px 0;gap:14px}
+  .gig .ev em{font-size:14px;margin-top:2px}
+  .gig .yr{font-size:11px;padding-top:4px}
+  .lineup,.fmt{font-size:15.5px;line-height:1.6}
+  .pill{font-size:11px;padding:5px 11px;margin:0 6px 8px 0}
+  .foot{flex-direction:column;align-items:flex-start;gap:22px;padding:26px 0 36px}
+  .foot .lbl{font-size:11px;margin-bottom:6px}
+  .listen{font-size:15.5px;line-height:1.9}
+  .listen .trk{font-size:22px}
+  .listen a,.contact a{text-decoration:underline;text-underline-offset:3px}
+  .contact{text-align:left;font-size:15.5px;line-height:1.8}
+  .contact .em{font-size:18px}
+  .qrwrap{display:none}
+}
+
+/* ---------- print / Save as PDF: exactly one Letter page ---------- */
+@media print{
+  body{background:none}
+  .bar{display:none}
+  .sheet{margin:0;box-shadow:none}
+}
+.nb{white-space:nowrap}
+</style>
+</head>
+<body>
+
+<div class="bar">
+  <a href="index.html">← patgillespie.ca</a>
+  <div class="acts">
+    <a href="https://www.youtube.com/watch?v=49HNzmJKP4Q">Vidéo</a>
+    <a href="music.html">Écouter</a>
+    <a href="tour.html">Spectacles</a>
+    <a href="mailto:bookings@patgillespie.ca">Réserver</a>
+    <a href="epk.html" lang="en" hreflang="en">English</a>
+    <button type="button" class="pdf" onclick="window.print()">Version PDF</button>
+  </div>
+</div>
+
+<main class="sheet">
+
+  <div class="hero">
+    <img src="images/band-bingo-hall.jpg" alt="Les quatre membres du Pat Gillespie Band assis sous un tableau de bingo">
+  </div>
+
+  <div class="plate">
+    <div>
+      <h1>Pat Gillespie Band</h1>
+      <div class="sub">East Coast Americana</div>
+    </div>
+    <div class="loc">Moncton · Nouveau-Brunswick<br>Depuis 2023 · FR / EN</div>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><b>100+</b><span>Spectacles en 2026</span></div>
+    <div class="stat"><b>50 000+</b><span>Écoutes depuis oct. 2025</span></div>
+    <div class="stat"><b>8 000+</b><span>Abonnés</span></div>
+  </div>
+
+  <div class="cols">
+    <div class="main">
+      <div class="eyebrow">Saison 2026</div>
+
+      <div class="gig"><div class="ev">Summer Days Festival — Riverview <span class="nb">(N.-B.)</span><em>À l’affiche avec Big Sugar et Sloan</em></div><div class="yr">JUILL.</div></div>
+      <div class="gig"><div class="ev">Island Fest-îles — Lamèque <span class="nb">(N.-B.)</span><em>À l’affiche avec Dean Brody et Les Gars du Nord</em></div><div class="yr">JUILL.</div></div>
+      <div class="gig"><div class="ev">Oktoberfest des Acadiens — Bertrand <span class="nb">(N.-B.)</span><em>Deux soirs · à l’affiche avec Trooper</em></div><div class="yr">SEPT.</div></div>
+      <div class="gig"><div class="ev">Tracadie Ribfest — Tracadie <span class="nb">(N.-B.)</span><em>Première édition</em></div><div class="yr">JUILL.</div></div>
+      <div class="gig"><div class="ev">Semaine Musique NB — Moncton <span class="nb">(N.-B.)</span><em>Artiste en vitrine officielle</em></div><div class="yr">OCT.</div></div>
+      <div class="gig"><div class="ev">UNB Hill Fest · StFX Homecoming<em>Grandes scènes universitaires — Fredericton <span class="nb">(N.-B.)</span> et Antigonish <span class="nb">(N.-É.)</span></em></div><div class="yr">AUTOMNE</div></div>
+      <div class="gig"><div class="ev">Festival des Huîtres · Quai à Bouctouche · Fête du Canada<em>Grandes scènes municipales et communautaires — Maisonnette, Bouctouche, Dieppe, Salisbury</em></div><div class="yr">2026</div></div>
+    </div>
+
+    <div class="side">
+      <div class="eyebrow">Le groupe</div>
+      <div class="lineup">
+        <b>Pat Gillespie</b> — voix, guitare<br>
+        <b>Ricky Breau</b> — guitare solo<br>
+        <b>Joel Chavarie</b> — basse<br>
+        <b>Matt LeBlanc</b> — batterie
+      </div>
+      <div class="fmt" style="margin-top:6px">Une formation à cinq musiciens est aussi offerte.</div>
+
+      <div class="eyebrow">Formules</div>
+      <div>
+        <span class="pill">Groupe complet</span><span class="pill">Duo</span><span class="pill">Solo</span>
+      </div>
+      <div class="fmt" style="margin-top:6px">Spectacles en français, en anglais ou bilingues. Production complète offerte.</div>
+
+      <div class="eyebrow">Musique originale</div>
+      <div class="fmt">Le premier EP, <em>Lakewood Drive</em> (oct. 2025), a dépassé les 36 000 écoutes sur Spotify et rejoint environ 10 000 auditeurs dans 96 pays. De nouveaux singles paraissent régulièrement, avec l’appui de Musique NB.</div>
+
+      <div class="eyebrow">Aussi disponibles</div>
+      <div class="fmt">Plan de scène, liste des entrées, devis technique et devis d’accueil fournis sur confirmation.</div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="listen">
+      <div class="lbl">Nouveau single · 16 octobre</div>
+      <div class="trk">Stranger</div>
+      <a href="https://distrokid.com/hyperfollow/patgillespie/stranger">Spotify · Apple Music · toutes les plateformes</a><br>
+      <a href="https://www.youtube.com/watch?v=49HNzmJKP4Q">Vidéo promotionnelle — youtube.com/@patjgillespie</a>
+    </div>
+    <div class="qrwrap">
+      <div class="qr"><img src="images/epk-fr-qr.png" alt="Code QR vers patgillespie.ca/epk-fr"></div>
+      <div class="qrcap">PATGILLESPIE.CA/EPK-FR</div>
+    </div>
+    <div class="contact">
+      <div class="lbl">Réservations</div>
+      <a class="em" href="mailto:bookings@patgillespie.ca">Bookings@patgillespie.ca</a><br>
+      patgillespie.ca · @patjgillespie
+    </div>
+  </div>
+
+</main>
+</body>
+</html>

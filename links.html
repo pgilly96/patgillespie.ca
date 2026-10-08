@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pat Gillespie — Links</title>
+<meta name="description" content="Pat Gillespie — new music, video, tour dates, bookings and socials, all in one place.">
+<link rel="stylesheet" href="style.css">
+<style>
+  .links-main { max-width: 520px; padding-top: 40px; }
+  .avatar {
+    width: 112px; height: 112px; border-radius: 50%;
+    object-fit: cover; margin: 0 auto 16px; display: block;
+    border: 3px solid #fff;
+  }
+  .socials { margin: 14px 0 0; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; }
+  .socials a { display: inline-block; padding: 6px 8px; color: var(--ink); font-weight: 600; }
+  .socials a:hover, .socials a:focus-visible { color: var(--accent); text-decoration: none; }
+
+  .link-list { list-style: none; margin: 22px 0 0; padding: 0; }
+  .link-list li { margin: 0 0 10px; }
+  .link-list a {
+    display: block;
+    padding: 15px 18px;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    background: #fff;
+    color: var(--ink);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    transition: border-color .15s ease, color .15s ease, transform .15s ease;
+  }
+  .link-list a:hover, .link-list a:focus-visible {
+    border-color: var(--accent);
+    color: var(--accent);
+    text-decoration: none;
+    transform: translateY(-1px);
+  }
+  .link-list a .note {
+    display: block;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: none;
+    color: var(--muted);
+    margin-top: 3px;
+  }
+  .link-list a.feature { border-color: var(--accent); border-width: 2px; }
+
+  /* Release rows: cover art on the left, like a track list */
+  .link-list a.release {
+    display: flex; align-items: center; gap: 14px;
+    padding: 8px 18px 8px 8px; text-align: left;
+  }
+  .link-list a.release img {
+    width: 52px; height: 52px; object-fit: cover; border-radius: 3px; flex-shrink: 0;
+  }
+  .link-list a.release .txt { flex: 1; min-width: 0; }
+  .link-list a.release .go {
+    font-size: 10.5px; font-weight: 600; letter-spacing: 0.14em; color: var(--muted); flex-shrink: 0;
+  }
+
+  .link-list li.divider {
+    font-size: 11px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 26px 0 10px;
+  }
+  .more { font-size: 13px; margin-top: 4px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="site-name">Pat Gillespie</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="music.html">Music</a>
+    <a href="tour.html">Tour</a>
+    <a href="contact.html">Contact</a>
+    <a href="signup.html">Sign Up</a>
+  </nav>
+</header>
+
+<main class="links-main">
+  <img src="images/hero.jpg" alt="Pat Gillespie" class="avatar">
+  <h1>Pat Gillespie</h1>
+  <p class="lede">East Coast Americana.</p>
+
+  <p class="socials">
+    <a href="https://instagram.com/patjgillespie">Instagram</a>
+    <a href="https://www.facebook.com/PatJGillespie/">Facebook</a>
+    <a href="https://tiktok.com/@patjgillespie">TikTok</a>
+    <a href="https://www.youtube.com/@patjgillespie">YouTube</a>
+  </p>
+
+  <ul class="link-list">
+    <li><a class="feature" href="https://distrokid.com/hyperfollow/patgillespie/stranger">
+      New Single — Stranger
+      <span class="note">Out October 16 · pre-save now</span>
+    </a></li>
+
+    <li><a href="https://www.youtube.com/watch?v=49HNzmJKP4Q">
+      Watch — Promotional Video
+      <span class="note">Pat Gillespie Band, live</span>
+    </a></li>
+
+    <li><a href="tour.html">
+      Tour Dates
+      <span class="note">Where we're playing next</span>
+    </a></li>
+
+    <li class="divider">Music</li>
+
+    <li><a class="release" href="https://open.spotify.com/track/63GWzcgKw2CeRxVqKL5mK0">
+      <img src="images/virginia.jpg" alt="" loading="lazy">
+      <span class="txt">Virginia<span class="note">Single · 2026</span></span>
+      <span class="go">Spotify</span>
+    </a></li>
+
+    <li><a class="release" href="https://open.spotify.com/track/1dU2mKkGjDIUtvt0bkyI0M">
+      <img src="images/back-down-south.jpg" alt="" loading="lazy">
+      <span class="txt">Back Down South<span class="note">Single · 2026</span></span>
+      <span class="go">Spotify</span>
+    </a></li>
+
+    <li><a class="release" href="https://open.spotify.com/album/6TFnB0K73lsL4bfjJK8XGg">
+      <img src="images/painless.jpg" alt="" loading="lazy">
+      <span class="txt">Painless<span class="note">Single · 2026</span></span>
+      <span class="go">Spotify</span>
+    </a></li>
+
+    <li><a class="release" href="https://open.spotify.com/album/6pqLLbW98E02Xj8ok1Pire">
+      <img src="images/more-than-me.jpg" alt="" loading="lazy">
+      <span class="txt">More than Me<span class="note">Single · 2026</span></span>
+      <span class="go">Spotify</span>
+    </a></li>
+
+    <li><a class="release" href="https://open.spotify.com/album/3h4HCEex6E3Py9vNbg4cqd">
+      <img src="images/lakewood-drive.jpg" alt="" loading="lazy">
+      <span class="txt">Lakewood Drive<span class="note">EP · 2025</span></span>
+      <span class="go">Spotify</span>
+    </a></li>
+
+    <li class="more"><a href="music.html" style="all:unset;cursor:pointer;color:var(--accent)">Apple Music and YouTube Music links →</a></li>
+
+    <li class="divider">Stay in touch</li>
+
+    <li><a href="signup.html">
+      Join the Mailing List
+      <span class="note">Shows and new music, first</span>
+    </a></li>
+
+    <li><a href="mailto:bookings@patgillespie.ca">
+      Bookings &amp; Enquiries
+      <span class="note">bookings@patgillespie.ca</span>
+    </a></li>
+
+    <li><a href="epk.html">
+      Press Kit
+      <span class="note">For festivals, venues and media</span>
+    </a></li>
+  </ul>
+</main>
+
+<footer>
+  <p class="social">
+    <a href="https://open.spotify.com/artist/79b18KLuGdHEQD4Qkzj2lD">Spotify</a> ·
+    <a href="https://music.apple.com/ca/artist/pat-gillespie/1838736609">Apple Music</a> ·
+    <a href="https://music.youtube.com/search?q=Pat+Gillespie">YouTube Music</a> ·
+    <a href="https://instagram.com/patjgillespie">Instagram</a> ·
+    <a href="https://facebook.com/patjgillespie">Facebook</a>
+  </p>
+  <p>Bookings: <a href="mailto:bookings@patgillespie.ca">bookings@patgillespie.ca</a></p>
+  <p>© 2026 Pat Gillespie</p>
+</footer>
+</body>
+</html>
