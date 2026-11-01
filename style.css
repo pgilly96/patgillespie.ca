@@ -150,16 +150,3 @@ footer .social a { margin: 0 8px; }
   .show { flex-direction: column; gap: 2px; text-align: left; }
   .show .venue { text-align: left; }
 }
-
-/* Lyrics */
-.lyrics { max-width: 560px; margin: 32px auto 0; text-align: left; }
-.section-label {
-  font-size: 11px;
-  letter-spacing: 0.26em;
-  text-transform: uppercase;
-  color: var(--muted);
-  margin: 28px 0 6px;
-}
-.section-label:first-child { margin-top: 0; }
-.verse { font-size: 17px; line-height: 1.75; }
-.lyrics-page .links { font-size: 14px; }
